@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScoutSync - Scout Management System</title>
+<style>
+:root{
+--bg:#0a0a0a;
+--card:#111827;
+--text:#fff;
+--muted:#94a3b8;
+--accent:#6366f1;
+--accent2:#8b5cf6;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body{background:var(--bg);color:var(--text)}
+.container{width:90%;max-width:1200px;margin:auto}
+.hero{padding:100px 0;text-align:center}
+.hero h1{font-size:4rem;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{max-width:700px;margin:20px auto;color:var(--muted);line-height:1.8}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--accent),var(--accent2));margin-top:20px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:40px 0}
+.card{background:var(--card);padding:25px;border-radius:20px}
+.card h2{color:#8b5cf6;font-size:2rem}
+.section{padding:70px 0}
+.section h2{margin-bottom:20px}
+.grid{display:grid;grid-template-columns:300px 1fr;gap:25px}
+.sidebar,.panel{background:var(--card);border-radius:20px;padding:25px}
+.sidebar ul{list-style:none}
+.sidebar li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:14px;text-align:left}
+.table th{background:#1f2937}
+.progress{height:14px;background:#1f2937;border-radius:999px;overflow:hidden;margin-top:10px}
+.fill{height:100%;width:85%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.timeline div{background:#1f2937;padding:15px;border-radius:12px;margin-bottom:12px}
+footer{text-align:center;padding:40px;color:var(--muted)}
+@media(max-width:768px){
+.hero h1{font-size:2.5rem}
+.grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="container">
+<h1>ScoutSync</h1>
+<p>Digital Scout Management Platform untuk mengelola Program Tahunan (Prota), Program Semester (Prosem), anggota, kegiatan, dan progres pelaksanaan program Pramuka.</p>
+<a href="#dashboard" class="btn">Open Dashboard</a>
+</div>
+</section>
+
+<div class="container">
+<div class="stats">
+<div class="card"><h2>120</h2><p>Anggota Aktif</p></div>
+<div class="card"><h2>15</h2><p>Program Tahunan</p></div>
+<div class="card"><h2>12</h2><p>Kegiatan Aktif</p></div>
+<div class="card"><h2>85%</h2><p>Progress Program</p></div>
+</div>
+</div>
+
+<section id="dashboard" class="section">
+<div class="container">
+<div class="grid">
+
+<div class="sidebar">
+<h2>Menu</h2>
+<ul>
+<li>Dashboard</li>
+<li>Program Tahunan</li>
+<li>Program Semester</li>
+<li>Anggota</li>
+<li>Kegiatan</li>
+<li>Sertifikat</li>
+<li>Laporan</li>
+</ul>
+</div>
+
+<div class="panel">
+<h2>Program Semester Ganjil</h2>
+<br>
+<table class="table">
+<tr><th>Bulan</th><th>Kegiatan</th><th>Status</th></tr>
+<tr><td>Juli</td><td>Orientasi Kepramukaan</td><td>✅ Selesai</td></tr>
+<tr><td>Agustus</td><td>PBB Dasar</td><td>✅ Selesai</td></tr>
+<tr><td>September</td><td>Tali Temali</td><td>🟡 Berjalan</td></tr>
+<tr><td>Oktober</td><td>Pionering</td><td>🟡 Berjalan</td></tr>
+<tr><td>November</td><td>Survival</td><td>⏳ Belum</td></tr>
+</table>
+
+<br><br>
+
+<h2>Progress Program</h2>
+<div class="progress"><div class="fill"></div></div>
+<p style="margin-top:10px">85% Program Tahunan telah terlaksana.</p>
+
+<br><br>
+
+<h2>Kegiatan Terdekat</h2>
+<div class="timeline">
+<div>🏕️ Kemah Sabtu Minggu - 12 Juli 2026</div>
+<div>🎖️ Pelantikan Bantara - 26 Juli 2026</div>
+<div>🤝 Bakti Sosial - 10 Agustus 2026</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 ScoutSync • Portfolio Project by Khumaidil Izzul Akhyar
+</footer>
+
+</body>
+</html>
 
